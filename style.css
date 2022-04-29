@@ -96,11 +96,6 @@ footer{
     margin: 20px;
 }
 
-main {
-    width: 940px;
-    margin: 0 auto;
-}
-
 form {
     margin: 40px 0;
 }
@@ -161,6 +156,13 @@ td, th{
     width: 100%;
 }
 
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
 .titulo-principal{
     text-align: center;
     font-size: 2em;
@@ -189,13 +191,50 @@ td, th{
 
 .mapa{
     padding: 3em 0;
+    /* background: linear-gradient(45deg, orange 10%, red 15%, blue 20%, green); */
+    /* background: radial-gradient(orange 10%, red 15%, blue 20%, green); */
+    background: linear-gradient(#fefefe,#888888);
 }
 
 .mapa p{
     margin: 0 0 2em;
     text-align: center;
 }
-.imagenDiferenciales{
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;  
+    display: inline-block; 
+    vertical-align: top; 
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:before{
+    content: "☆";
+}
+
+.items:nth-child(1){
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
     width: 60%;
 }
 
@@ -206,4 +245,11 @@ td, th{
 
 /* Cómo funciona la propiedad float y cómo la podemos usar para que nuestros elementos floten sobre el lado que se indica.
 Como limpiar el float con la propiedad clear del CSS */
+
+/* Lo que aprendimos en esta aula:
+
+A mejorar la semántica de la página principal, con nuevas divisiones, clases, etc.
+Nuevas pseudo-clases
+Cómo aplicar un background degradado en la página
+Pseudo-elementos */
 
