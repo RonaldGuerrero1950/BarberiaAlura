@@ -160,19 +160,15 @@ td, th{
 main p{
     background: red;
 }
-
 main > p{
     background: green;
 }
-
 img + p{
     background: yellow;
 }
-
 img ~ p{
     background: orangered;
 }
-
 .principal p:not(#mision){
     background: turquoise;
 } */
@@ -189,6 +185,7 @@ img ~ p{
     font-size: 2em;
     margin: 0 0 1em;
     clear: left;
+    /* text-shadow: 2px 2px 5px rgb(235, 3, 3); */
 }
 
 .principal p{
@@ -231,6 +228,7 @@ img ~ p{
 .diferenciales{
     padding: 3em 0;
     background: #888888;
+    /* box-shadow: inset 0 0 30px red; */
 }
 
 .contenido-diferenciales{
@@ -258,6 +256,8 @@ img ~ p{
 
 .imagen-diferenciales{
     width: 60%;
+    /* box-shadow: 10px 10px 30px 20px rgb(0, 0, 0), -10px -10px yellow, -20px -20px rgb(197, 8, 8, 0.5); */
+    box-shadow: 10px 10px 30px 20px rgb(0, 0, 0);
 }
 
 .imagen-diferenciales:hover{
@@ -270,11 +270,63 @@ img ~ p{
     margin: 1em auto;
 }
 
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+    .productos{
+        width: auto;
+        margin: 3%;
+        padding: 2%;
+    }
+    
+    .productos li{
+        display: block;
+        width: auto;
+        margin: 3%;
+        padding: 3%;
+    }
+
+    form {
+        margin: 4%;
+    }
+        
+    .input-padron {
+        margin: 1%;
+        padding: 0;
+        width: 100%;
+    }
+
+    .enviar{
+        width: 100%;
+    }
+
+    #mensaje{
+        width: 100%;
+        margin: 0;
+    }
+
+    table{
+        margin: 10% auto;
+    }
+}
+
 /* Cómo funciona la propiedad float y cómo la podemos usar para que nuestros elementos floten sobre el lado que se indica.
 Como limpiar el float con la propiedad clear del CSS */
 
 /* Lo que aprendimos en esta aula:
-
 A mejorar la semántica de la página principal, con nuevas divisiones, clases, etc.
 Nuevas pseudo-clases
 Cómo aplicar un background degradado en la página
@@ -294,3 +346,7 @@ Cómo hacer cuentas con CSS, con la propiedad calc
 width: calc((100%/3)-10px);
 */
 
+/* Cómo manipular la opacidad de los elementos, con la propiedad CSS opacity
+Cómo manipular la opacidad de los colores
+Cómo agregar un sombreado alrededor de los elementos, con la propiedad CSS box-shadow
+Cómo agregar un sombreado en textos, con la propiedad CSS text-shadow */
